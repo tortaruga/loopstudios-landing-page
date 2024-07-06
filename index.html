@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css   ">
+  <script defer src="./app.js"></script>
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+</head>
+<body>
+
+<nav>
+ <img class="nav__logo" src="./images/logo.svg" alt="logo of Loopstudios">
+ <ul class="nav__desktop-menu">
+  <li><a class="nav__link nav__link--lowercase" href="#">About</a></li>
+  <li><a class="nav__link nav__link--lowercase" href="#">Careers</a></li>
+  <li><a class="nav__link nav__link--lowercase" href="#">Events</a></li>
+  <li><a class="nav__link nav__link--lowercase" href="#">Products</a></li>
+  <li><a class="nav__link nav__link--lowercase" href="#">Support</a></li>
+ </ul>
+  <button aria-label="open mobile menu button" type="button" class="nav__open-menu-btn"></button>
+  <div class="nav__mobile-menu">
+    <div class="mobile-menu__group"> 
+      <img class="nav__logo" src="./images/logo.svg" alt="logo of Loopstudios">
+    <button aria-label="close mobile menu button" type="button" class="nav__close-menu-btn"></button>
+    </div> 
+    <ul class="mobile-menu__list"> 
+      <li><a class="nav__link nav__link--uppercase" href="#">About</a></li>
+      <li><a class="nav__link nav__link--uppercase" href="#">Careers</a></li>
+      <li><a class="nav__link nav__link--uppercase" href="#">Events</a></li>
+      <li><a class="nav__link nav__link--uppercase" href="#">Products</a></li>
+      <li><a class="nav__link nav__link--uppercase" href="#">Support</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+<main>
+  <section class="main__hero">
+    <div class="hero__heading-container">
+      <h1 class="hero__heading">Immersive experiences that deliver</h1>
+    </div>
+  </section>
+  
+  <section class="intro">
+     <img class="intro__img" src="./images/desktop/image-interactive.jpg" alt="image of a guy with virtual reality glasses pretending to be a dinosaur i guess">
+     <div class="intro__text">
+      <h2 class="intro__heading">The leader in interactive VR</h2>
+      <p class="intro__description">Founded in 2011, Loopstudios has been producing world-class virtual reality 
+        projects for some of the best companies around the globe. Our award-winning 
+        creations have transformed businesses through digital experiences that bind 
+        to their brand.</p>
+     </div>
+  </section>
+
+  <section class="creations">
+    <div class="creations__banner">
+      <h2 class="creations__heading">Our creations</h2>
+      <a class="creations__see-all-btn creations__see-all-btn--desktop" href="#">See all</a>
+    </div>
+    <a class="creations__link" href="#">
+      <h3 class="creations__link__heading">Deep earth</h3>
+    </a>
+    <a class="creations__link" href="#">
+      <h3 class="creations__link__heading">Night arcade</h3>
+    </a>
+    <a class="creations__link" href="#">
+      <h3 class="creations__link__heading">Soccer team vr</h3>
+    </a>
+    <a class="creations__link" href="#">
+      <h3 class="creations__link__heading">the grid</h3>
+    </a>
+    <a class="creations__link" href="#">
+      <h3 class="creations__link__heading">from up above vr</h3>
+    </a>
+    <a class="creations__link" href="#">
+      <h3 class="creations__link__heading">pocket borealis</h3>
+    </a>
+    <a class="creations__link" href="#">
+      <h3 class="creations__link__heading">the curiosity</h3>
+    </a>
+    <a class="creations__link" href="#">
+      <h3 class="creations__link__heading">make it fisheye</h3>
+    </a>
+    <a class="creations__see-all-btn creations__see-all-btn--mobile" href="#">See all</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer__group-1">
+   <img class="footer__logo" src="./images/logo.svg" alt="logo of Loopstudios">
+   <ul class="footer__menu">
+    <li><a class="footer__link" href="#">About</a></li>
+    <li><a class="footer__link" href="#">Careers</a></li>
+    <li><a class="footer__link" href="#">Events</a></li>
+    <li><a class="footer__link" href="#">Products</a></li>
+    <li><a class="footer__link" href="#">Support</a></li>
+   </ul>
+  </div>
+
+  <div class="footer__group-2">
+    <ul class="footer__socials">
+        <li><a class="socials__link footer__link" href="#">
+          <img src="./images/icon-facebook.svg" alt="facebook icon">
+        </a></li>
+        <li><a class="socials__link footer__link" href="#">
+          <img src="./images/icon-twitter.svg" alt="twitter icon">
+        </a></li>
+        <li><a class="socials__link footer__link" href="#">
+          <img src="./images/icon-pinterest.svg" alt="pinterest icon">
+        </a></li>
+        <li><a class="socials__link footer__link" href="#">
+          <img src="./images/icon-instagram.svg" alt="instagram icon">
+        </a></li>
+      </ul>
+     <div class="footer__copyright">
+      © 2021 Loopstudios. All rights reserved.
+     </div>
+     <div class="footer__attribution">
+      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="footer__link" href="https://www.frontendmentor.io/profile/tortaruga">tortaruga</a>.
+    </div>
+  
+  </div>
+</footer>
+
+</body>
+</html>

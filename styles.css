@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  font-family: "Alata";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 55%);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.nav__desktop-menu,
+.creations__see-all-btn--desktop {
+  display: none;
+}
+
+.nav__link--uppercase {
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  padding-block: 0.5rem;
+}
+
+.nav__open-menu-btn, .nav__close-menu-btn {
+  background: url(./images/icon-hamburger.svg) no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__close-menu-btn {
+  background: url(./images/icon-close.svg) no-repeat;
+  background-position: center;
+}
+
+.nav__mobile-menu {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  left: 0%;
+  top: 0%;
+  background-color: hsl(0, 0%, 0%);
+  flex-direction: column;
+  color: hsl(0, 0%, 100%);
+  display: none;
+  padding: 2rem 1.5rem;
+  max-width: 100%;
+  gap: 5rem;
+}
+
+.nav__logo,
+.footer__logo {
+  width: 7.5rem;
+}
+
+.mobile-menu__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 1rem;
+}
+
+.nav__link--uppercase {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.main__hero {
+  min-height: 100vh;
+  width: 100%;
+  background: url(./images/mobile/image-hero.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hero__heading-container {
+  width: clamp(70rem, 100%, 20rem);
+  margin: auto;
+}
+
+.hero__heading {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  border: 0.13rem solid hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  font-size: 2rem;
+  max-width: 42rem;
+}
+
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro__heading {
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  color: hsl(0, 0%, 0%);
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+.intro__img {
+  width: 100%;
+}
+
+.creations {
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.creations__heading {
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  color: hsl(0, 0%, 0%);
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.creations__link {
+  width: 100%;
+  aspect-ratio: 5/2;
+  display: flex;
+  align-items: flex-end;
+  padding-inline: 1rem;
+}
+
+.creations__link:nth-of-type(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-deep-earth.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(1):hover {
+  background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/mobile/image-deep-earth.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(1):hover .creations__link__heading {
+  color: hsl(0, 0%, 0%);
+}
+
+.creations__link:nth-of-type(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-night-arcade.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(2):hover {
+  background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/mobile/image-night-arcade.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(2):hover .creations__link__heading {
+  color: hsl(0, 0%, 0%);
+}
+
+.creations__link:nth-of-type(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-soccer-team.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(3):hover {
+  background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/mobile/image-soccer-team.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(3):hover .creations__link__heading {
+  color: hsl(0, 0%, 0%);
+}
+
+.creations__link:nth-of-type(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-grid.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(4):hover {
+  background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/mobile/image-grid.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(4):hover .creations__link__heading {
+  color: hsl(0, 0%, 0%);
+}
+
+.creations__link:nth-of-type(5) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-from-above.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(5):hover {
+  background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/mobile/image-from-above.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(5):hover .creations__link__heading {
+  color: hsl(0, 0%, 0%);
+}
+
+.creations__link:nth-of-type(6) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-pocket-borealis.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(6):hover {
+  background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/mobile/image-pocket-borealis.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(6):hover .creations__link__heading {
+  color: hsl(0, 0%, 0%);
+}
+
+.creations__link:nth-of-type(7) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-curiosity.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(7):hover {
+  background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/mobile/image-curiosity.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(7):hover .creations__link__heading {
+  color: hsl(0, 0%, 0%);
+}
+
+.creations__link:nth-of-type(8) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-fisheye.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(8):hover {
+  background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/mobile/image-fisheye.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.creations__link:nth-of-type(8):hover .creations__link__heading {
+  color: hsl(0, 0%, 0%);
+}
+
+.creations__see-all-btn {
+  border: 0.1rem solid hsl(0, 0%, 0%);
+  padding: 0.5rem 2rem;
+  width: max-content;
+  color: hsl(0, 0%, 0%);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.creations__see-all-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.creations__link__heading {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3rem;
+  max-width: 40%;
+}
+
+footer {
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  font-size: 0.8rem;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer__link::before {
+  width: 0%;
+  height: 0.1rem;
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 50%;
+  transition: 0.4s;
+}
+
+.footer__link:hover::before {
+  width: 100%;
+  left: 0%;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.footer__copyright {
+  color: hsl(0, 0%, 55%);
+  text-align: center;
+}
+
+.footer__attribution {
+  color: grey;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  nav {
+    width: clamp(70rem, 90%, 20rem);
+    left: 50%;
+    margin-left: clamp(-35rem, -50%, -10rem);
+    max-width: 100%;
+  }
+  .nav__desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .nav__link--lowercase::before {
+    width: 0%;
+    height: 0.1rem;
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    transition: 0.4s;
+  }
+  .nav__link--lowercase:hover::before {
+    width: 100%;
+    left: 0%;
+  }
+  .main__hero {
+    background: url(./images/desktop/image-hero.jpg) no-repeat;
+  }
+  .nav__open-menu-btn, .nav__close-menu-btn {
+    display: none;
+  }
+  .hero__heading {
+    font-size: 5rem;
+  }
+  .intro {
+    width: clamp(70rem, 100%, 20rem);
+    display: grid;
+    margin: auto;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 40% 60%;
+    max-width: 100%;
+  }
+  .intro__img {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .intro__text {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background: hsl(0, 0%, 100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-inline: 5rem;
+    text-align: left;
+  }
+  .intro__heading {
+    margin: 0;
+    font-size: 3rem;
+  }
+  .creations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
+    width: clamp(70rem, 100%, 20rem);
+    margin: auto;
+    grid-template-rows: repeat(3, max-content);
+    gap: 2rem;
+    max-width: 100%;
+  }
+  .creations__banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 4;
+    grid-row: 1/2;
+  }
+  .creations__heading {
+    font-size: 3rem;
+  }
+  .creations__link {
+    aspect-ratio: 9/16;
+    display: flex;
+    align-items: flex-end;
+    padding-inline: 1rem;
+    width: 12rem;
+  }
+  .creations__link:nth-of-type(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/desktop/image-deep-earth.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(1):hover {
+    background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/desktop/image-deep-earth.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(1):hover .creations__link__heading {
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__link:nth-of-type(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/desktop/image-night-arcade.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(2):hover {
+    background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/desktop/image-night-arcade.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(2):hover .creations__link__heading {
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__link:nth-of-type(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/desktop/image-soccer-team.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(3):hover {
+    background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/desktop/image-soccer-team.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(3):hover .creations__link__heading {
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__link:nth-of-type(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/desktop/image-grid.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(4):hover {
+    background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/desktop/image-grid.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(4):hover .creations__link__heading {
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__link:nth-of-type(5) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/desktop/image-from-above.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(5):hover {
+    background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/desktop/image-from-above.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(5):hover .creations__link__heading {
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__link:nth-of-type(6) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/desktop/image-pocket-borealis.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(6):hover {
+    background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/desktop/image-pocket-borealis.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(6):hover .creations__link__heading {
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__link:nth-of-type(7) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/desktop/image-curiosity.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(7):hover {
+    background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/desktop/image-curiosity.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(7):hover .creations__link__heading {
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__link:nth-of-type(8) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/desktop/image-fisheye.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(8):hover {
+    background: linear-gradient(rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0.5)), url(./images/desktop/image-fisheye.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .creations__link:nth-of-type(8):hover .creations__link__heading {
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__see-all-btn--desktop {
+    display: inline-block;
+    border: 0.1rem solid hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 0%);
+  }
+  .creations__see-all-btn--mobile {
+    display: none;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__group-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__menu {
+    flex-direction: row;
+  }
+  .footer__group-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}/*# sourceMappingURL=styles.css.map */

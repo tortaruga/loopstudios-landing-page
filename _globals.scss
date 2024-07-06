@@ -1,0 +1,33 @@
+
+$white: hsl(0, 0%, 100%); 
+$black: hsl(0, 0%, 0%); 
+$secondary-1: hsl(0, 0%, 55%);
+$secondary-2: hsl(0, 0%, 41%);
+$heading-font: 'Josefin Sans';
+$normal-font: 'Alata'; 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;   
+    font: {
+        family: $normal-font;
+        weight: 400;
+        size: .9rem;
+    }
+color: $secondary-1;
+} 
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    position: relative;
+}
